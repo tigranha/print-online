@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+
+<form th:action="@{/registerUsers/register}" method="post">
+    <label>
+        <input type="text" placeholder="firstname" name="firstname"/>
+    </label>
+    <label>
+        <input type="text" placeholder="lastname" name="lastname"/>
+    </label>
+    <label>
+        <input type="email" placeholder="email" name="email"/>
+    </label>
+    <label>
+        <input type="password" placeholder="password" name="password"/>
+    </label>
+    <button type="submit">Register</button>
+<!--    <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>-->
+</form>
+
+</body>
+</html>

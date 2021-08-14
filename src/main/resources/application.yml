@@ -1,0 +1,22 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: test
+  mail:
+    host: "smtp.gmail.com"
+    port: 587
+    username: "testprojecttech42@gmail.com"
+    password: "main(String[] args)"
+    properties:
+      mail:
+        smtp:
+          auth: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimout: 5000
+          starttls:
+            enable: true
