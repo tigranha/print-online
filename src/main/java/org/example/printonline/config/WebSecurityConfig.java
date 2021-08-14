@@ -23,7 +23,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                .formLogin().loginPage("/auth/login")
+                .formLogin().loginPage("/login")
                 .usernameParameter("email").defaultSuccessUrl("/")
                 .and()
                 .logout().logoutSuccessUrl("/login");
